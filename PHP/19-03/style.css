@@ -1,6 +1,7 @@
 * {
     margin: 10px;
     padding: 0;
+    list-style: none;
 }
 
 body {
@@ -51,11 +52,10 @@ header h1 {
     border: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    bottom: center;
+    cursor: progress;
 }
 
 .lista {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
 }
