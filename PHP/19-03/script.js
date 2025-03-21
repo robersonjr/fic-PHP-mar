@@ -11,6 +11,10 @@ function cadUser(event) {
 
     lista.innerHTML += templateHTML;
     //limpar campo
+    setTimeout(() => {
+        window.location.href="./outra.html";
+    }, 5000);
+
     nome.value = "";
 
 }
