@@ -17,3 +17,8 @@ th, td {
 th {
     background:  #f2f2f2;
 }
+
+.tdVariavel {
+    background: orange;
+    color: azure;
+}
