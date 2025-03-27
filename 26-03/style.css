@@ -1,0 +1,33 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+table {
+    width: 100%;
+}
+
+table tr td {
+    text-align:  center;
+}
+
+table th {
+    background: rgb(228, 225, 225);
+    height: 25px;
+}
+
+table tr:nth-child(even) {
+    background: blueviolet;
+    color: #fff;
+}
+
+.link-button {
+    background: red;
+    max-width: 88px;
+    display: block;
+    padding: 11px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 9px;
+}
