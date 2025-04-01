@@ -9,3 +9,4 @@
     } else if ($nota >= 6) {
         echo "você esta aprovado, Parabéns";
     }
+?>
