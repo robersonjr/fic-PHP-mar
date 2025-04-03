@@ -1,9 +1,8 @@
 <?php
-    $dia = "Sabado ou Domingo";
-
+    $dia = "Sabado";
 
     // or ||
-    if ($dia === "Sabado ou Domingo"  or "Domingo") {
+    if ($dia === "Sabado "  or "Domingo") {
         echo "É final de semana";
     } else {
         echo "É dia útil ! Acorda pra Cuspir";
