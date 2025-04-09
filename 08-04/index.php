@@ -21,7 +21,7 @@
     ];
 
     $produtos = [
-        ["nome" => "Notebook", "preco" => 3500, "estoque" => 10],
+        ["nome" => "Notebook", "preco" => 3500, "estoque" => 0],
         ["nome" => "Tablet", "preco" => 899.50, "estoque" => 8],
         ["nome" => "Fone JBL", "preco" => 150.99, "estoque" => 100],
     ];
@@ -29,6 +29,10 @@
     // Funções auxiliares
     function formatarPreco($preco) {
         return 'R$ ' . number_format($preco, 2, ',', '.');
+    }
+
+    function temEstoque($quantidade) {
+        return $quantidade > 0;
     }
 ?>
 
@@ -41,6 +45,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 
     <div class ="container">
         <h1>Lista de frutas</h1>
@@ -105,10 +110,16 @@
                     <td><?= formatarPreco($produto['preco'])?></td>
                     <td><?=$produto['estoque']?></td>
                     <!-- <td><?=$produto['estoque'] >= 8 ? "Disponivel" : "Indisponivel" ?></td> -->
-                    <td>no</td>
+                    <td style="color: <?= temEstoque($produto['estoque']) ? 'green' : 'red' ?>">
+                        <?= temEstoque($produto['estoque']) ? 'Sim' : 'Não' ?>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </table>
+        <hr>
+        <div>
+            <a href="pets.php">Lista de pets</a>
+        </div>
 
     </div>
     
