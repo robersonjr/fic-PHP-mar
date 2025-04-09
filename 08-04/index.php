@@ -19,6 +19,17 @@
             ["nome" => "Marketing Digital", "duracao" => 4],
         ]
     ];
+
+    $produtos = [
+        ["nome" => "Notebook", "preco" => 3500, "estoque" => 10],
+        ["nome" => "Tablet", "preco" => 899.50, "estoque" => 8],
+        ["nome" => "Fone JBL", "preco" => 150.99, "estoque" => 100],
+    ];
+
+    // Funções auxiliares
+    function formatarPreco($preco) {
+        return 'R$ ' . number_format($preco, 2, ',', '.');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -79,6 +90,25 @@
                 <?php endforeach; ?>
             </table>
         <?php endforeach  ?>
+        <hr>
+        <h5>4. Produtos com Função</h5>
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>Disponivel</th>
+            </tr>
+            <?php foreach($produtos as $produto) : ?>
+                <tr>
+                    <td><?=$produto['nome']?></td>
+                    <td><?= formatarPreco($produto['preco'])?></td>
+                    <td><?=$produto['estoque']?></td>
+                    <!-- <td><?=$produto['estoque'] >= 8 ? "Disponivel" : "Indisponivel" ?></td> -->
+                    <td>no</td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
 
     </div>
     
