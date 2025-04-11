@@ -30,6 +30,7 @@ th {
     padding: 10px;
     background: #fff;
     padding-left: 250px;
+    justify-content: center;
 }
 
 .paiBox {
@@ -42,8 +43,11 @@ th {
     border: 1px solid black;
     display: flex;
     max-width: 400px;
+    padding: 10%;
+
 }
 
 .boxGeral img {
     width: 400px;
 }
+

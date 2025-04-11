@@ -2,7 +2,7 @@
  $pets = [
     ["nome" => "Rex", "tipo" => "Cachorro", "idade" => 0.5, "preco" => 1200.00],
     ["nome" => "Mingau", "tipo" => "Gato", "idade" => 3, "preco" => 850.50],
-    ["nome" => "Piu Piu", "tipo" => "Pássaro", "idade" => 2, "preco" => 150.00],
+    ["nome" => "Thomas", "tipo" => "Passaro", "idade" => 2, "preco" => 150.00],
     ["nome" => "Nemo", "tipo" => "Peixe", "idade" => 1, "preco" => 45.90],
     ["nome" => "Hantaro", "tipo" => "Hamster", "idade" => 1.5, "preco" => 75.25]
  ];
@@ -46,34 +46,43 @@
         <a href="index.php" class="boxGeral">
             <div>
                 <img src="hot.jpg" alt="">
-                <p>Lorem ipsum dolor.</p>
+                <p>Rex.</p>
+                <p>Rottweiler.</p>
+                <p>0.5 meses de idade.</p>
             </div>
         </a>
         <a href="index.php" class="boxGeral">
             <div>
                 <img src="esf.jpg" alt="">
-                <p>Lorem ipsum dolor.</p>
+                <p>Mingau.</p>
+                <p>Sphynx.</p>
+                <p>3 anos de idade.</p>
             </div>
         </a>
         <a href="index.php" class="boxGeral">
             <div>
                 <img src="can.jpg" alt="">
-                <p>Lorem ipsum dolor.</p>
+                <p>Thomas.</p>
+                <p>Canário.</p>
+                <p>2 anos de idade.</p>
             </div>
         </a>
         <a href="index.php" class="boxGeral">
             <div>
                 <img src="peixe.jpg" alt="">
-                <p>Lorem ipsum dolor.</p>
+                <p>Nemo</p>
+                <p>Oscar</p>
+                <p>1 ano de idade.</p>
             </div>
         </a>
         <a href="index.php" class="boxGeral">
             <div>
                 <img src="ham.jpg" alt="">
-                <p>Lorem ipsum dolor.</p>
+                <p>Hantaro.</p>
+                <p>Hamister.</p>
+                <p>1.5 anos de idade</p>
             </div>
         </a>
-        <hr>
         </div>
 
 
