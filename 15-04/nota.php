@@ -8,7 +8,7 @@
 </head>
 <body>
     <main class="container col-md-6 mt-5 text-center">
-        <form>
+        <form action="nota-detalhes.php" method="get">
             <section class="form-control">
                 <label for="nota" class="d-block mb-2 text-sucess fw-bold">Nota</label>
                 <input type="number" class="form-control text-center" id="nota" name="nota" placeholder="Digite a sua nota">
